@@ -970,7 +970,7 @@ unsigned char GetNfactor(int64 nTimestamp) {
     if (n < 0) n = 0;
 
     if (n > 255)
-        printf( "GetNfactor(%lld) - something wrong(n == %d)\n", nTimestamp, n );
+        printf( "GetNfactor(%s) - something wrong(n == %d)\n", nTimestamp, n );
 
     unsigned char N = (unsigned char) n;
     //printf("GetNfactor: %d -> %d %d : %d / %d\n", nTimestamp - nChainStartTime, l, s, n, min(max(N, minNfactor), maxNfactor));
