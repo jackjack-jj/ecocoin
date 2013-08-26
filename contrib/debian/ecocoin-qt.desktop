@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=EcoCoin
+Comment=EcoCoin P2P Cryptocurrency
+Comment[fr]=EcoCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=EcoCoin, esten ese kriptografik sanal para birimi
+Exec=/usr/bin/ecocoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/ecocoin;
+Categories=Office;
