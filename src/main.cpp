@@ -2491,10 +2491,10 @@ bool LoadBlockIndex(bool fAllowNew)
 {
     if (fTestNet)
     {
-        pchMessageStart[0] = 0x44;
-        pchMessageStart[1] = 0x43;
-        pchMessageStart[2] = 0x4f;
-        pchMessageStart[3] = 0xe6;
+        pchMessageStart[0] = 0xcd;
+        pchMessageStart[1] = 0xf2;
+        pchMessageStart[2] = 0xc0;
+        pchMessageStart[3] = 0xef;
 
 
         hashGenesisBlock = hashGenesisBlockTestNet;
@@ -2850,7 +2850,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
 
-unsigned char pchMessageStart[4] = { 0x45, 0x43, 0x4f, 0xe6 };
+unsigned char pchMessageStart[4] = { 0xd9, 0xe6, 0xe7, 0xe5 };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {
